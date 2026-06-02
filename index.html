@@ -74,6 +74,18 @@ h1{
 .tag-garay{background:rgba(247,129,102,.12);color:var(--accent3);}
 .tag-qc{background:rgba(121,192,255,.12);color:var(--accent6);}
 
+.year-cell{text-align:center;font-family:'IBM Plex Mono',monospace;color:var(--muted);white-space:nowrap;}
+
+.type-badge{display:inline-block;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.68rem;font-family:'IBM Plex Mono',monospace;font-weight:600;white-space:nowrap;}
+.type-badge-teoria{background:rgba(88,166,255,.12);color:var(--accent);}
+.type-badge-exp{background:rgba(63,185,80,.12);color:var(--accent2);}
+.type-badge-review{background:rgba(210,168,255,.12);color:var(--accent4);}
+.type-badge-tutorial{background:rgba(255,166,87,.12);color:var(--accent5);}
+
+.platform-tag{font-size:0.72rem;color:var(--muted);font-style:italic;white-space:nowrap;}
+
+.keyconcept-tag{display:inline-block;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.65rem;font-family:'IBM Plex Mono',monospace;font-weight:500;background:rgba(121,192,255,.1);color:var(--accent6);white-space:nowrap;}
+
 table{
   width:100%;
   border-collapse:collapse;
@@ -176,26 +188,34 @@ Generación de estados time-bin entrelazados mediante SFWM en guías integradas 
 
 <thead>
 <tr>
-<th>#</th>
-<th style="width:30%">Referencia</th>
-<th style="width:18%">Etiqueta</th>
-<th>Descripción y relevancia</th>
+<th style="width:3%">#</th>
+<th style="width:5%">Año</th>
+<th style="width:28%">Referencia</th>
+<th style="width:7%">Tipo</th>
+<th style="width:9%">Plataforma</th>
+<th style="width:9%">Concepto Clave</th>
+<th style="width:12%">Etiqueta</th>
+<th style="width:27%">Descripción y relevancia</th>
 </tr>
 </thead>
 
 <tbody>
 
 <tr class="section-header">
-<td colspan="4">I. Fundamentos teóricos · JSA · GVM · Temporal modes</td>
+<td colspan="8">I. Fundamentos teóricos · JSA · GVM · Temporal modes</td>
 </tr>
 
 <tr>
 <td class="num">01</td>
+<td class="year-cell">2005</td>
 <td>
 <div class="title-cell">Synthesis of time-bin entangled states via tailored group velocity matching</div>
 <div class="authors">U'Ren, Erdmann, Walmsley (2005)</div>
 <div class="doi"><a href="https://opg.optica.org/abstract.cfm?URI=FiO-2005-JTuC9">FiO 2005</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Cristales χ²</span></td>
+<td><span class="keyconcept-tag">GVM / Time-bin</span></td>
 <td><span class="tag tag-teoria">TEORÍA</span></td>
 <td>
 <div class="desc">
@@ -209,11 +229,15 @@ Este trabajo propone un método para generar estados entrelazados en la variable
 
 <tr>
 <td class="num">02</td>
+<td class="year-cell">2007</td>
 <td>
 <div class="title-cell">Photon pair-state preparation with tailored spectral properties by SFWM in photonic-crystal fiber</div>
 <div class="authors">Garay-Palmett et al. (2007)</div>
 <div class="doi"><a href="https://doi.org/10.1364/OE.15.014870">10.1364/OE.15.014870</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Fibra óptica</span></td>
+<td><span class="keyconcept-tag">JSA</span></td>
 <td>
 <span class="tag tag-jsa">JSA</span>
 <span class="tag tag-garay">GARAY/U'REN</span>
@@ -230,11 +254,15 @@ Trabajo seminal del grupo anfitrión sobre ingeniería espectral en SFWM mediant
 
 <tr>
 <td class="num">03</td>
+<td class="year-cell">2008</td>
 <td>
 <div class="title-cell">Tailored photon pair preparation relying on full group velocity matching in fibre-based SFWM</div>
 <div class="authors">Garay-Palmett, Rangel-Rojo, U'Ren (2008)</div>
 <div class="doi"><a href="https://arxiv.org/abs/0810.1332">arXiv:0810.1332</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Fibra óptica</span></td>
+<td><span class="keyconcept-tag">GVM</span></td>
 <td>
 <span class="tag tag-teoria">TEORÍA</span>
 <span class="tag tag-garay">GARAY/U'REN</span>
@@ -251,11 +279,15 @@ Analiza condiciones de full group velocity matching para producir estados bifot�
 
 <tr>
 <td class="num">04</td>
+<td class="year-cell">2014</td>
 <td>
 <div class="title-cell">Time ordering effects in the generation of entangled photons using nonlinear optical processes</div>
 <div class="authors">Quesada & Sipe (2014)</div>
 <div class="doi"><a href="https://arxiv.org/abs/1410.0012">arXiv:1410.0012</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Procesos no lineales</span></td>
+<td><span class="keyconcept-tag">Time ordering</span></td>
 <td><span class="tag tag-teoria">TEORÍA</span></td>
 <td>
 <div class="desc">
@@ -269,11 +301,15 @@ Formalismo avanzado para efectos de orden temporal en SFWM y SPDC bajo bombeo pu
 
 <tr>
 <td class="num">05</td>
+<td class="year-cell">2018</td>
 <td>
 <div class="title-cell">Gaussian functions are optimal for waveguided nonlinear-quantum-optical processes</div>
 <div class="authors">Quesada & Brańczyk (2018)</div>
 <div class="doi"><a href="https://arxiv.org/abs/1805.06868">arXiv:1805.06868</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Fotónica integrada</span></td>
+<td><span class="keyconcept-tag">JSA / Pureza</span></td>
 <td>
 <span class="tag tag-jsa">JSA</span>
 <span class="tag tag-teoria">TEORÍA</span>
@@ -290,11 +326,15 @@ Condiciones matemáticas necesarias y suficientes para factorizabilidad de la JS
 
 <tr>
 <td class="num">06</td>
+<td class="year-cell">2014</td>
 <td>
 <div class="title-cell">Engineering temporal-mode-selective quantum frequency conversion</div>
 <div class="authors">Reddy, Raymer, McKinstrie (2014)</div>
 <div class="doi"><a href="https://doi.org/10.1364/OE.22.028897">10.1364/OE.22.028897</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Guías χ² / PPLN</span></td>
+<td><span class="keyconcept-tag">Temporal modes</span></td>
 <td>
 <span class="tag tag-teoria">TEORÍA</span>
 <span class="tag tag-qc">QC</span>
@@ -311,11 +351,15 @@ Este artículo estudia la conversión de frecuencia selectiva en modos temporale
 
 <tr>
 <td class="num">07</td>
+<td class="year-cell">2015</td>
 <td>
 <div class="title-cell">Photon Temporal Modes: A Complete Framework for Quantum Information Science</div>
 <div class="authors">Brecht et al. (2015)</div>
 <div class="doi"><a href="https://doi.org/10.1103/PhysRevX.5.041017">10.1103/PhysRevX.5.041017</a></div>
 </td>
+<td><span class="type-badge type-badge-review">Review</span></td>
+<td><span class="platform-tag">Temporal Modes</span></td>
+<td><span class="keyconcept-tag">Temporal modes</span></td>
 <td>
 <span class="tag tag-review">REVIEW</span>
 <span class="tag tag-qc">QC</span>
@@ -332,11 +376,15 @@ En este trabajo se introduce el concepto de modos temporales fotónicos como una
 
 <tr>
 <td class="num">08</td>
+<td class="year-cell">2023</td>
 <td>
 <div class="title-cell">Fiber-based photon-pair generation: tutorial</div>
 <div class="authors">Garay-Palmett et al. (2023)</div>
 <div class="doi"><a href="https://doi.org/10.1364/JOSAB.479425">10.1364/JOSAB.479425</a></div>
 </td>
+<td><span class="type-badge type-badge-tutorial">Tutorial</span></td>
+<td><span class="platform-tag">Fibra óptica</span></td>
+<td><span class="keyconcept-tag">JSA</span></td>
 <td>
 <span class="tag tag-review">TUTORIAL</span>
 <span class="tag tag-garay">GARAY/U'REN</span>
@@ -352,16 +400,20 @@ Este artículo ofrece una revisión integral de la generación de pares de foton
 </tr>
 
 <tr class="section-header">
-<td colspan="4">II. Caracterización espectral · JSA · Pureza</td>
+<td colspan="8">II. Caracterización espectral · JSA · Pureza</td>
 </tr>
 
 <tr>
 <td class="num">09</td>
+<td class="year-cell">2018</td>
 <td>
 <div class="title-cell">Joint spectral characterization of photon-pair sources</div>
 <div class="authors">Zielnicki et al. (2018)</div>
 <div class="doi"><a href="https://arxiv.org/abs/1801.01195">arXiv:1801.01195</a></div>
 </td>
+<td><span class="type-badge type-badge-exp">Experimental</span></td>
+<td><span class="platform-tag">Fibra óptica</span></td>
+<td><span class="keyconcept-tag">JSA</span></td>
 <td>
 <span class="tag tag-jsa">JSA</span>
 <span class="tag tag-garay">GARAY/U'REN</span>
@@ -378,11 +430,15 @@ Comparación experimental de técnicas para medir JSI y pureza espectral.
 
 <tr>
 <td class="num">10</td>
+<td class="year-cell">2013</td>
 <td>
 <div class="title-cell">Theory of cavity-enhanced spontaneous four-wave mixing</div>
 <div class="authors">Garay-Palmett et al. (2013)</div>
 <div class="doi"><a href="https://arxiv.org/abs/1309.2705">arXiv:1309.2705</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Microresonador</span></td>
+<td><span class="keyconcept-tag">SFWM / Cavidad</span></td>
 <td>
 <span class="tag tag-teoria">TEORÍA</span>
 <span class="tag tag-garay">GARAY/U'REN</span>
@@ -399,11 +455,15 @@ Formalismo espectral y temporal para SFWM en cavidades χ³.
 
 <tr>
 <td class="num">11</td>
+<td class="year-cell">2008</td>
 <td>
 <div class="title-cell">Generation of pure single photon wavepackets by conditional preparation based on spontaneous parametric downconversion</div>
 <div class="authors">Mosley et al. (2008)</div>
 <div class="doi"><a href="https://doi.org/10.1103/PhysRevLett.100.133601">10.1103/PhysRevLett.100.133601</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Cristales χ²</span></td>
+<td><span class="keyconcept-tag">Pureza espectral</span></td>
 <td>
 <span class="tag tag-jsa">JSA</span>
 <span class="tag tag-teoria">TEORÍA</span>
@@ -419,16 +479,20 @@ Trabajo clásico sobre generación de fotones puros mediante ingeniería espectr
 </tr>
 
 <tr class="section-header">
-<td colspan="4">III. Time-bin experimental en plataformas integradas</td>
+<td colspan="8">III. Time-bin experimental en plataformas integradas</td>
 </tr>
 
 <tr>
 <td class="num">12</td>
+<td class="year-cell">2015</td>
 <td>
 <div class="title-cell">Compact and reconfigurable silicon nitride time-bin entanglement circuit</div>
 <div class="authors">Xiong et al. (2015)</div>
 <div class="doi"><a href="https://doi.org/10.1364/OPTICA.2.000724">10.1364/OPTICA.2.000724</a></div>
 </td>
+<td><span class="type-badge type-badge-exp">Experimental</span></td>
+<td><span class="platform-tag">Si₃N₄</span></td>
+<td><span class="keyconcept-tag">Time-bin</span></td>
 <td><span class="tag tag-exp">EXPERIMENTAL</span></td>
 <td>
 <div class="desc">
@@ -442,11 +506,15 @@ Primer circuito integrado en Si₃N₄ para generación y análisis de estados t
 
 <tr>
 <td class="num">13</td>
+<td class="year-cell">2018</td>
 <td>
 <div class="title-cell">Integrated silicon nitride time-bin entanglement circuits</div>
 <div class="authors">Zhang et al. (2018)</div>
 <div class="doi"><a href="https://doi.org/10.1364/OL.43.003469">10.1364/OL.43.003469</a></div>
 </td>
+<td><span class="type-badge type-badge-exp">Experimental</span></td>
+<td><span class="platform-tag">Si₃N₄</span></td>
+<td><span class="keyconcept-tag">Time-bin</span></td>
 <td><span class="tag tag-exp">EXPERIMENTAL</span></td>
 <td>
 <div class="desc">
@@ -460,11 +528,15 @@ Implementación monolítica completa de generación y análisis de time-bin en S
 
 <tr>
 <td class="num">14</td>
+<td class="year-cell">2007</td>
 <td>
 <div class="title-cell">Entanglement generation using silicon wire waveguide</div>
 <div class="authors">Takesue et al. (2007)</div>
 <div class="doi"><a href="https://doi.org/10.1063/1.2814040">10.1063/1.2814040</a></div>
 </td>
+<td><span class="type-badge type-badge-exp">Experimental</span></td>
+<td><span class="platform-tag">Silicio</span></td>
+<td><span class="keyconcept-tag">SFWM</span></td>
 <td><span class="tag tag-exp">EXPERIMENTAL</span></td>
 <td>
 <div class="desc">
@@ -478,11 +550,15 @@ Primer experimento de entrelazamiento time-bin vía SFWM en guía integrada.
 
 <tr>
 <td class="num">15</td>
+<td class="year-cell">2024</td>
 <td>
 <div class="title-cell">Quantum interference of pulsed time-bin entanglement generated from silicon ring resonator</div>
 <div class="authors">Ono et al. (2024)</div>
 <div class="doi"><a href="https://doi.org/10.1038/s41598-024-51311-4">10.1038/s41598-024-51311-4</a></div>
 </td>
+<td><span class="type-badge type-badge-exp">Experimental</span></td>
+<td><span class="platform-tag">Silicio</span></td>
+<td><span class="keyconcept-tag">Time-bin</span></td>
 <td><span class="tag tag-exp">EXPERIMENTAL</span></td>
 <td>
 <div class="desc">
@@ -496,11 +572,15 @@ Analiza pureza espectral y visibilidad de interferencia en resonadores de anillo
 
 <tr>
 <td class="num">16</td>
+<td class="year-cell">2020</td>
 <td>
 <div class="title-cell">A review of integrated quantum photonics</div>
 <div class="authors">Wang et al. (2020)</div>
 <div class="doi"><a href="https://doi.org/10.1038/s42254-019-0132-1">10.1038/s42254-019-0132-1</a></div>
 </td>
+<td><span class="type-badge type-badge-review">Review</span></td>
+<td><span class="platform-tag">Fotónica integrada</span></td>
+<td><span class="keyconcept-tag">Fotónica integrada</span></td>
 <td><span class="tag tag-review">REVIEW</span></td>
 <td>
 <div class="desc">
@@ -513,16 +593,20 @@ Review general sobre plataformas integradas para fotónica cuántica.
 </tr>
 
 <tr class="section-header">
-<td colspan="4">IV. Quantum Computing · High-dimensional time-bin states</td>
+<td colspan="8">IV. Quantum Computing · High-dimensional time-bin states</td>
 </tr>
 
 <tr>
 <td class="num">17</td>
+<td class="year-cell">2024</td>
 <td>
 <div class="title-cell">Resource-efficient photonic quantum computation with high-dimensional cluster states</div>
 <div class="authors">Nature Photonics (2024)</div>
 <div class="doi"><a href="https://doi.org/10.1038/s41566-024-01524-w">10.1038/s41566-024-01524-w</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Quantum Computing</span></td>
+<td><span class="keyconcept-tag">Cluster states</span></td>
 <td>
 <span class="tag tag-qc">QC</span>
 </td>
@@ -538,11 +622,15 @@ Uso de qudits fotónicos para reducir recursos en computación cuántica one-way
 
 <tr>
 <td class="num">18</td>
+<td class="year-cell">2025</td>
 <td>
 <div class="title-cell">Fiber transmission of cluster states via multi-level time-bin encoding</div>
 <div class="authors">arXiv (2025)</div>
 <div class="doi"><a href="https://arxiv.org/abs/2507.01497">arXiv:2507.01497</a></div>
 </td>
+<td><span class="type-badge type-badge-exp">Experimental</span></td>
+<td><span class="platform-tag">Fibra óptica</span></td>
+<td><span class="keyconcept-tag">Cluster states</span></td>
 <td>
 <span class="tag tag-qc">QC</span>
 <span class="tag tag-exp">EXPERIMENTAL</span>
@@ -559,11 +647,15 @@ Transmisión de estados cluster mediante codificación time-bin multinivel.
 
 <tr>
 <td class="num">19</td>
+<td class="year-cell">2024</td>
 <td>
 <div class="title-cell">Time-bin entanglement in the deterministic generation of linear photonic cluster states</div>
 <div class="authors">Bauch et al. (2024)</div>
 <div class="doi"><a href="https://doi.org/10.1063/5.0214197">10.1063/5.0214197</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Quantum Computing</span></td>
+<td><span class="keyconcept-tag">Cluster states</span></td>
 <td>
 <span class="tag tag-teoria">TEORÍA</span>
 <span class="tag tag-qc">QC</span>
@@ -580,11 +672,15 @@ Generación determinista de estados cluster lineales basados en time-bin.
 
 <tr>
 <td class="num">20</td>
+<td class="year-cell">2025</td>
 <td>
 <div class="title-cell">Quantum key distribution implemented with d-level time-bin entangled photons</div>
 <div class="authors">Yu et al. (2025)</div>
 <div class="doi"><a href="https://doi.org/10.1038/s41467-024-55345-0">10.1038/s41467-024-55345-0</a></div>
 </td>
+<td><span class="type-badge type-badge-exp">Experimental</span></td>
+<td><span class="platform-tag">Fibra óptica</span></td>
+<td><span class="keyconcept-tag">QKD</span></td>
 <td>
 <span class="tag tag-exp">EXPERIMENTAL</span>
 <span class="tag tag-qc">QC</span>
@@ -600,16 +696,20 @@ QKD de alta dimensionalidad usando qudits time-bin.
 </tr>
 
 <tr class="section-header">
-<td colspan="4">V. Reviews · Estado del campo</td>
+<td colspan="8">V. Reviews · Estado del campo</td>
 </tr>
 
 <tr>
 <td class="num">21</td>
+<td class="year-cell">2025</td>
 <td>
 <div class="title-cell">Progress in integrated and fiber optics for time-bin based quantum information processing</div>
 <div class="authors">Montaut et al. (2025)</div>
 <div class="doi"><a href="https://doi.org/10.3389/aot.2025.1560084">10.3389/aot.2025.1560084</a></div>
 </td>
+<td><span class="type-badge type-badge-review">Review</span></td>
+<td><span class="platform-tag">Fotónica integrada</span></td>
+<td><span class="keyconcept-tag">Time-bin</span></td>
 <td><span class="tag tag-review">REVIEW</span></td>
 <td>
 <div class="desc">
@@ -623,11 +723,15 @@ Review reciente y comprehensivo sobre procesamiento cuántico basado en time-bin
 
 <tr>
 <td class="num">22</td>
+<td class="year-cell">2025</td>
 <td>
 <div class="title-cell">Energy-time and time-bin entanglement: past, present and future</div>
 <div class="authors">npj Quantum Information (2025)</div>
 <div class="doi"><a href="https://doi.org/10.1038/s41534-025-01072-3">10.1038/s41534-025-01072-3</a></div>
 </td>
+<td><span class="type-badge type-badge-review">Review</span></td>
+<td><span class="platform-tag">Fotónica integrada</span></td>
+<td><span class="keyconcept-tag">Time-bin</span></td>
 <td><span class="tag tag-review">REVIEW</span></td>
 <td>
 <div class="desc">
@@ -640,16 +744,20 @@ Review histórico y prospectivo sobre entrelazamiento energía-tiempo y time-bin
 </tr>
 
 <tr class="section-header">
-<td colspan="4">VI. Ingeniería de dispersión · Si₃N₄ · Fuentes puras</td>
+<td colspan="8">VI. Ingeniería de dispersión · Si₃N₄ · Fuentes puras</td>
 </tr>
 
 <tr>
 <td class="num">23</td>
+<td class="year-cell">2024</td>
 <td>
 <div class="title-cell">Spectrally pure visible-telecom photon pairs via dispersion-engineered Si₃N₄ waveguides</div>
 <div class="authors">Phys. Rev. Applied (2024)</div>
 <div class="doi"><a href="https://doi.org/10.1103/PhysRevApplied.22.014070">10.1103/PhysRevApplied.22.014070</a></div>
 </td>
+<td><span class="type-badge type-badge-teoria">Teoría</span></td>
+<td><span class="platform-tag">Si₃N₄</span></td>
+<td><span class="keyconcept-tag">Ingeniería de dispersión</span></td>
 <td>
 <span class="tag tag-jsa">JSA</span>
 <span class="tag tag-teoria">TEORÍA</span>
@@ -666,11 +774,15 @@ Diseño de guías Si₃N₄ para generar pares espectralmente puros mediante ing
 
 <tr>
 <td class="num">24</td>
+<td class="year-cell">2024</td>
 <td>
 <div class="title-cell">Visible-Telecom Entangled-Photon Pair Generation with Integrated Photonics: Guidelines and Materials Comparison</div>
 <div class="authors">ACS Photonics (2024)</div>
 <div class="doi"><a href="https://doi.org/10.1021/acsphotonics.4c01238">10.1021/acsphotonics.4c01238</a></div>
 </td>
+<td><span class="type-badge type-badge-review">Review</span></td>
+<td><span class="platform-tag">Fotónica integrada</span></td>
+<td><span class="keyconcept-tag">SFWM</span></td>
 <td>
 <span class="tag tag-review">REVIEW</span>
 <span class="tag tag-jsa">JSA</span>
@@ -687,11 +799,15 @@ Comparación de plataformas integradas para generación de pares entrelazados.
 
 <tr>
 <td class="num">25</td>
+<td class="year-cell">1999</td>
 <td>
 <div class="title-cell">Experimental pulsed source of time-bin entangled qubits for quantum communication</div>
 <div class="authors">Brendel et al. (1999)</div>
 <div class="doi"><a href="https://doi.org/10.1103/PhysRevLett.82.2594">10.1103/PhysRevLett.82.2594</a></div>
 </td>
+<td><span class="type-badge type-badge-exp">Experimental</span></td>
+<td><span class="platform-tag">Cristales χ²</span></td>
+<td><span class="keyconcept-tag">Time-bin</span></td>
 <td>
 <span class="tag tag-exp">EXPERIMENTAL</span>
 </td>
